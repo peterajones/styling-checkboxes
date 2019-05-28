@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+#container {
+  position: relative;
+  width: 920px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #747474;
+  border: 1px solid rgba(0, 200, 0, 0.6);
+}
+
+#switches {
+  position: relative;
+  margin-left: calc(50% - 50px);
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}
+
+input {
+  position: absolute;
+  left: 400px;
+}
+
+label span {
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+  position: relative;
+  top: 8px;
+  right: 8px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s;
+}
+
+label span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: left 0.3s;
+}
+
+label input:checked + span {
+  border-color: #fff;
+  background-color: rgb(0, 200, 0);
+}
+
+label input:checked + span::after {
+  left: calc(100% - 21px);
+  background-color: #fff;
+}
+
+#form2 label input {
+  display: none;
+}

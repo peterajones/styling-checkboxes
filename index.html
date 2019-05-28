@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkboxes to Switches</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="container">
+  <br>
+  <h1>Converting checkboxes to switches</h1>
+  <form action="GET" id="form1">
+    <h4>Here are some conventional checkboxes</h4>
+      <label><input name="email" type="checkbox">Newsletter</label>
+      <label><input name="notifications" type="checkbox" checked>Notifications</label>
+      <label><input name="alerts" type="checkbox">Email Alerts</label>
+  </form>
+  <br>
+  <form action="GET" id="form2">
+    <h4>Here are the converted checkboxes</h4>
+    <div id="switches">
+      <label for="email"><input type="checkbox" name="email" id="email"><span></span>Newsletter</label>
+      <label for="notifications"><input type="checkbox" checked name="notifications" id="notifications"><span></span>Notifications</label>
+      <label for="alerts"><input type="checkbox" name="alerts" id="alerts"><span></span>Email Alerts</label>
+    </div>
+  </form>
+  <br>
+</div>
+</body>
+</html>
